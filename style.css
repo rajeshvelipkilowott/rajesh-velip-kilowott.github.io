@@ -8,7 +8,7 @@ body {
 
 .header {
   overflow: hidden;
-  background-color: red;
+  background-color: rgb(228, 77, 77);
   padding: 20px 10px;
 }
 
@@ -55,7 +55,7 @@ body {
 
 
 .sidenav {
-  height: 82vh;
+  height: 83.5vh;
   width: 250px;
   position: fixed;
   z-index: 1;
@@ -64,7 +64,7 @@ body {
   background-color:white;
   overflow-x: hidden;
   padding-top: 20px;
-  border-color: red;
+  border-color: rgb(228, 77, 77);
   border-right-style: solid;
 
 }
@@ -87,8 +87,8 @@ body {
 
 
 .myprofile{
-  background-color: #b3a7a7;
-  height: 82vh;
+  background-color: #ebdcdc;
+  height: 83.5vh;
   border-left: red;
 }
 
@@ -128,7 +128,7 @@ margin-right: 30px;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: rgb(228, 77, 77);
   color: white;
   text-align: left;
 }
