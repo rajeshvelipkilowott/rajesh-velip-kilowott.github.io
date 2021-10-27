@@ -1,51 +1,135 @@
-.container{
-    max-width: 700px;
-    margin: auto;
-    background-color: rgb(46, 35, 34);
-    background-clip: content-box;
-    padding: 10px;
-    
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.header {
+  overflow: hidden;
+  background-color: red;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 4px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+.header a.active {
+  color: white;
+}
+.header-left{
+  padding-left: 250px;
+}
+
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-  .circle{
-      border-radius:50%;
-      display: block;
-    margin-left: 80px;
-    margin-right: 30px;
-      
+  .header-right {
+    float: none;
+  }
+ 
+}
+
+
+.sidenav {
+  height: 82vh;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-color: red;
+  border-right-style: solid;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  text-align: center;
+  top: 20;
+}
+
+
+
+.sidenav a:hover {
+  color: #dd2f2f;
+}
+
+
+.myprofile{
+  background-color: #c9baba;
+  height: 82vh;
+  border-left: red;
+}
+
+.my-self {
+  margin-left: 400px; 
+  font-size: 16px; 
   
-  }
-  #color{
-    background-color:rgb(95, 182, 233);
-  }
-  h3{
-    background-color: aliceblue;
-  }
-  #resume{
-    width:90px;
-    height:65px;
-    background-color: red;
-    position:relative;
-    animation-name: example;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-  }
-  
-  @keyframes example{
-    0%{
-      background-color: red;
-      left: 0px;
-      top: 0px;
-    }
-    25%{
-      background-color: yellow;
-      left: 615px;
-      top: 0px;
-    }
-    100%{
-      background-color: red;
-      left: 0px;
-      top: 0px;
-    }
-    
-  }
+  padding-top: 50px;
+}
+.my-skills {
+  margin-left: 400px; 
+  font-size: 16px; 
+  padding-top: 50px;
+}
+.my-interest {
+  margin-left: 400px; 
+  font-size: 16px; 
+  padding-top: 50px;
+}
+
+.my-links {
+  margin-left: 400px; 
+  font-size: 16px; 
+  padding-top: 50px;
+}
+
+.circle{
+  border-radius:50%;
+  display: block;
+margin-left: 80px;
+margin-right: 30px;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: left;
+}
+
